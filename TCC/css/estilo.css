@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2? family= Lobster & family= Pacifico & family= Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100; 1.300;1.400;1.500;1.700;1.900 & família= Solitreo & display=trocar');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 *{
     box-sizing: border-box ;
 }
@@ -17,6 +18,7 @@ body{
     width: 100%;
     border-bottom: 5px solid #ff013f;
 }
+
 .logo{
     margin-left: 10%;
     flex: 20%;
@@ -110,9 +112,16 @@ body{
     margin: 0;
 }
 
+.headline p{
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(14, 172, 0);
+    font-size: 25px;
+}
+
 .img-headline{
 text-align: center;
-margin-right: 10%;
+margin-right: none;
+margin-left: 5%;
 flex:40%;
 }
 
