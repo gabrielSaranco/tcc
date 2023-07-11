@@ -231,10 +231,26 @@ max-height: 100%;
 padding-top: 5%;
  }
 
+ .section_sobre_nos{
+    text-align: center;
+    width: 50%;
+    margin-left: 5%;
+ }
+
+ .sobre_nos h1{
+    text-align: center;
+    
+ }
+
+ .sobre_nos p{
+    font-family:Noto Serif Makasar; 
+    height: 100%;
+ }
+
+ 
+
  .img_sobre_nos{
-    width: 10px;
-    height: 10px;
-    position: relative;
+    margin-left: 20%;
     position: center;
  }
 
