@@ -234,7 +234,9 @@ padding-top: 5%;
  .section_sobre_nos{
     text-align: center;
     width: 50%;
-    margin-left: 5%;
+    margin-left: 25%;
+    line-height: 25px;
+
  }
 
  .sobre_nos h1{
@@ -244,10 +246,10 @@ padding-top: 5%;
 
  .sobre_nos p{
     font-family:Noto Serif Makasar; 
-    height: 100%;
+    font-size: 60px;
+
  }
 
- 
 
  .img_sobre_nos{
     margin-left: 20%;
