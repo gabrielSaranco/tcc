@@ -143,6 +143,7 @@ flex:40%;
 
 
 section{
+    /*border: 2px solid black;*/
     display: inline-block;
     margin-top: 80px;
     margin-left:5%;
@@ -231,12 +232,17 @@ max-height: 100%;
 padding-top: 5%;
  }
 
- .section_sobre_nos{
+ .sobre_nos{
+    font-size: 18px;
     text-align: center;
     width: 50%;
     margin-left: 25%;
     line-height: 25px;
 
+ }
+
+ .sobre_nos2{
+    border: 2px solid black;
  }
 
  .sobre_nos h1{
@@ -246,13 +252,15 @@ padding-top: 5%;
 
  .sobre_nos p{
     font-family:Noto Serif Makasar; 
-    font-size: 60px;
 
  }
+
 
 
  .img_sobre_nos{
     margin-left: 20%;
     position: center;
  }
+
+
 
