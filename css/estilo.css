@@ -41,6 +41,7 @@ body{
     color: rgb(255, 255, 255);
     font-size: 40px;
 }
+
 .menu{
     flex: 70%;
     /*border: 1px solid blue;*/
@@ -262,5 +263,39 @@ padding-top: 5%;
     position: center;
  }
 
+
+ .card_sobre_nos{
+    display:inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 1%;
+    border: 1px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+ }
+
+ .card_sobre_nos:hover{
+    
+position: relative; /* Necessário para a animação */
+  
+ 
+animation: floatAnimation 5s infinite ease-in-out; /* Aplica a animação ao card */
+}
+
+/* Definindo a animação usando @keyframes */
+@keyframes floatAnimation {
+  
+ 
+0%, 100% {
+    
+   
+transform: translateY(0); /* Mantém o card na posição original */
+  }
+  50% {
+    
+   
+transform: translateY(-30px); /* Move o card 3-0 pixels para cima */
+  }
+}
 
 
