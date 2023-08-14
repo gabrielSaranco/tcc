@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2? family= Lobster & family= Pacifico & family= Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100; 1.300;1.400;1.500;1.700;1.900 & família= Solitreo & display=trocar');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family= Noto +Serif+Makasar & display=swap');
+
+@media screen  and (max-widith:825px){
+    .logo{
+width: auto;
+height: auto;
+    }
+}
+
 *{
     box-sizing: border-box ;
 }
@@ -36,10 +44,11 @@ body{
     
 }
 
+
 .logo h1{
     font-family: Noto Serif Makasar;
     color: rgb(255, 255, 255);
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .menu{
@@ -108,12 +117,16 @@ body{
 }
 
 .botão_login{
+    font-size: 20px;
     display: inline-block;
     background: #ff013f;
     padding: 20px;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     border-radius: 5px;
+}
+
+.botão_login a{
     text-decoration: none;
 }
 
@@ -182,6 +195,10 @@ section h2{
     display: none;
 }
 
+.card-text{
+    color: #00920c;
+}
+
 .card:hover{
 background:#ff013f;
 color: white;
@@ -239,6 +256,7 @@ padding-top: 5%;
     width: 50%;
     margin-left: 25%;
     line-height: 25px;
+    color: #00920c;
 
  }
 
@@ -296,6 +314,14 @@ transform: translateY(0); /* Mantém o card na posição original */
    
 transform: translateY(-30px); /* Move o card 3-0 pixels para cima */
   }
+}
+
+@media screen and(max-widith: 100%){
+   .navbar{
+    width: 100%;
+    flex-direction: column;
+}
+   
 }
 
 
