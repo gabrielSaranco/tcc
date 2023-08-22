@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2? family= Lobster & family= Pacifico & family= Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100; 1.300;1.400;1.500;1.700;1.900 & família= Solitreo & display=trocar');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family= Noto +Serif+Makasar & display=swap');
+
+@media screen  and (max-widith:825px){
+    .logo{
+width: auto;
+height: auto;
+    }
+}
+
+*{
+    box-sizing: border-box ;
+}
+body{
+    margin: 0;
+    font-family: Noto Serif Makasar;
+}
+
+.navbar{
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    background-color:rgb(45, 210, 30);
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    border-bottom: 5px solid #ff013f;
+}
+
+.navbar h1{
+    font-family: Noto Serif Makasar;
+    color: rgb(255, 255, 255);
+    font-size: 32px;  
+}
+
+
+.logo{
+    margin-left: 10%;
+    flex: 20%;
+   /* border: 1px solid red;*/
+    text-align: left;
+    
+}
+
+
+.logo h1{
+    font-family: Noto Serif Makasar;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+}
+
+.menu{
+    flex: 70%;
+    /*border: 1px solid blue;*/
+    text-align: right;
+    padding: 20px;
+}
+
+.menu a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 16px;
+
+}
+
+.menu a:hover{
+    color: #ff013f;
+    padding: 10px 25px;
+    border-top: 4px solid #ff013f;
+    padding: 10px 25px;
+    
+} 
+
+#Botao{
+    background-color:#ff013f;
+    padding: 10px 25px;
+    border-radius: 5px;
+    margin-right: 10%;
+    margin-left: 3%;
+}
+
+#Botao:hover{
+    border: none;
+    background-color:#00920c;
+    color: white;
+
+}
+
+.header{
+    background: #ffffff;
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 100px;
+}
+
+.headline{
+   margin-left: 10%;
+   flex: 40%;
+   text-align: left;
+}
+
+.headline p{
+    color: rgb(14, 172, 0);
+    text-align: left;
+    font-size: 40px;
+    font-family:Noto Serif Makasar;
+}
+
+.headline h2{
+    text-decoration: none;
+}
+
+.botão_login{
+    font-size: 20px;
+    display: inline-block;
+    background: #ff013f;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.botão_login a{
+    text-decoration: none;
+}
+
+.botão_login:hover{
+    background: rgb(0, 168, 37);
+}
+
+.headline h2{
+    font-weight: 900;
+    font-size: 20px;
+    color: rgb(14, 172, 0);
+    padding: 0;
+    margin: 0;
+}
+
+.headline p{
+    font-family: Noto Serif Makasar;
+    color: rgb(14, 172, 0);
+    font-size: 30px;
+}
+
+.img-headline{
+text-align: center;
+margin-right: none;
+margin-left: 5%;
+flex:40%;
+}
+
+
+section{
+    /*border: 2px solid black;*/
+    display: inline-block;
+    margin-top: 80px;
+    margin-left:5%;
+    margin-right: 5%;
+    padding: 5%;
+    text-align: center;
+    width: 90%;
+}
+
+section h2{
+    width: 100%;
+    font-size: 50px;
+    margin: 0;
+    font-family:Noto Serif Makasar; 
+    font: bold;
+    color: rgb(14, 172, 0); 
+}
+
+.serviços{
+    display: inline-block;
+    margin-top: 5%;
+}
+
+.card{
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 1%;
+    border: 1px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.text-oculto{
+    display: none;
+}
+
+.card-text{
+    color: #00920c;
+}
+
+.card:hover{
+background:#ff013f;
+color: white;
+padding: 40px;
+}
+
+
+.card:hover img{
+    display: none;
+}
+
+
+.card:hover .card-text{
+display: none;
+}
+
+.card:hover .text-oculto{
+    display: block;
+}
+
+footer{
+    margin-top: 100px;
+    height: 400px;
+    background-image:linear-gradient(180deg,#00b300, #00630d, rgb(0, 0, 0) );
+    text-align: center;
+    border-top: 5px solid  #ff013f;
+}
+
+.logo-rodape{
+padding: 100px;
+}
+
+
+.agencia{
+    font-family:Noto Serif Makasar;
+    color: rgb(255, 255, 255);
+    font-size: 32px;   
+}
+
+.whats{
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+}
+
+.img_calc{
+max-width: 100%;
+max-height: 100%;
+padding-top: 5%;
+ }
+
+ .sobre_nos{
+    font-size: 18px;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    line-height: 25px;
+    color: #00920c;
+
+ }
+
+ .sobre_nos2{
+    border: 2px solid black;
+ }
+
+ .sobre_nos h1{
+    text-align: center;
+    
+ }
+
+ .sobre_nos p{
+    font-family:Noto Serif Makasar; 
+
+ }
+
+
+
+ .img_sobre_nos{
+    margin-left: 20%;
+    position: center;
+ }
+
+
+ .card_sobre_nos{
+    display:inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 1%;
+    border: 1px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+ }
+
+ .card_sobre_nos:hover{
+    
+position: relative; /* Necessário para a animação */
+  
+ 
+animation: floatAnimation 5s infinite ease-in-out; /* Aplica a animação ao card */
+}
+
+/* Definindo a animação usando @keyframes */
+@keyframes floatAnimation {
+  
+ 
+0%, 100% {
+    
+   
+transform: translateY(0); /* Mantém o card na posição original */
+  }
+  50% {
+    
+   
+transform: translateY(-30px); /* Move o card 3-0 pixels para cima */
+  }
+}
+
+@media screen and(max-widith: 100%){
+   .navbar{
+    width: 100%;
+    flex-direction: column;
+}
+   
+}
+
+

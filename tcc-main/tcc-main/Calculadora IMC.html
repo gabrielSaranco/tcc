@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Calculadora de IMC</title>
+    <style>
+
+body {
+    background-image: url('img/mesa\ de\ comida.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+      .botao {
+        border-radius: 10%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+    
+      .botao:hover {
+        background-color: green;
+      }
+    </style>
+</head>
+<div class="img_calc">
+<body background="img/mesa de comida.jpg">
+</div>
+<body>
+    <nav style="position:initial;" class="navbar">
+      <div class="logo">
+        <h1 style="font-size: 30px;">Calculadora de IMC</h1>
+    </div>
+      <div class="menu">
+        <a href="login">Login</a>
+        <a href="index.html">Página Inicial</a>
+        <a href="Dietas.html">Dietas</a>
+        <a href="Exercicíos.html">Exercicíos</a>
+    </div>
+</nav>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+        <title>Calculadora de IMC</title>
+        <style>
+          body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+          }
+      
+          .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          }
+      
+          h1 {
+            text-align: center;
+            color: #009933;
+          }
+      
+          label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+          }
+      
+          input[type="text"],
+          input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+          }
+      
+          button {
+            background-color: #009933;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+          }
+      
+          .result {
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 4px;
+            text-align: center;
+          }
+      
+          .result.green {
+            background-color: #009933;
+            color: #ffffff;
+          }
+      
+          .result.red {
+            background-color: #ff0000;
+            color: #ffffff;
+          }
+      
+          .restart-btn {
+            margin-top: 10px;
+          }
+        </style>
+        <div class="container">
+          <h1>Calculadora de IMC</h1>
+          <form id="imcForm">
+            <label for="weight">Peso (kg):</label>
+            <input type="number" id="weight" required>
+      
+            <label for="height">Altura (cm):</label>
+            <input type="number" id="height" required>
+            <br>
+    
+            <label for="gender">Sexo:</label>
+            <br>
+            <select id="gender">
+
+              <option value="male">Masculino</option>
+              <option value="female">Feminino</option>
+
+            </select>
+      <br>
+      <br>
+            <button type="submit">Calcular</button>
+          </form>
+          <div id="result" class="result"></div>
+          <button id="restartBtn" class="restart-btn" style="display: none;">Reiniciar</button>
+        </div>
+      
+        <script>
+          document.getElementById('imcForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+      
+            var weight = document.getElementById('weight').value;
+            var height = document.getElementById('height').value;
+            var gender = document.getElementById('gender').value;
+      
+            var bmi = calculateBMI(weight, height);
+            var result = document.getElementById('result');
+            var restartBtn = document.getElementById('restartBtn');
+      
+            result.textContent = 'Seu IMC é: ' + bmi.toFixed(2);
+      
+            if (gender === 'male') {
+              if (bmi < 20.7) {
+                result.classList.add('red');
+                result.textContent += ' - Abaixo do peso ideal (masculino)';
+              } else if (bmi >= 20.7 && bmi <= 26.4) {
+                result.classList.add('green');
+                result.textContent += ' - Peso ideal (masculino)';
+              } else {
+                result.classList.add('red');
+                result.textContent += ' - Acima do peso ideal (masculino)';
+              }
+            } else if (gender === 'female') {
+              if (bmi < 19.1) {
+                result.classList.add('red');
+                result.textContent += ' - Abaixo do peso ideal (feminino)';
+              } else if (bmi >= 19.1 && bmi <= 25.8) {
+                result.classList.add('green');
+                result.textContent += ' - Peso ideal (feminino)';
+              } else {
+                result.classList.add('red');
+                result.textContent += ' - Acima do peso ideal (feminino)';
+              }
+            }
+      
+            restartBtn.style.display = 'block';
+          });
+      
+          document.getElementById('restartBtn').addEventListener('click', function() {
+            document.getElementById('imcForm').reset();
+            document.getElementById('result').textContent = '';
+            document.getElementById('result').className = 'result';
+            this.style.display = 'none';
+          });
+      
+          function calculateBMI(weight, height) {
+            var heightInMeters = height / 100;
+            var bmi = weight / (heightInMeters * heightInMeters);
+            return bmi;
+          }
+        </script>
+        <a href="index.html" class="botao">Página inicial</a>
+      </body>
+</body>
+</html>
