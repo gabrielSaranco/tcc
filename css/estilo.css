@@ -189,33 +189,6 @@ section h2{
     cursor: pointer;
 }
 
-.text-oculto{
-    display: none;
-}
-
-.card-text{
-    color: #00920c;
-}
-
-.card:hover{
-background:#ff013f;
-color: white;
-padding: 40px;
-}
-
-
-.card:hover img{
-    display: none;
-}
-
-
-.card:hover .card-text{
-display: none;
-}
-
-.card:hover .text-oculto{
-    display: block;
-}
 
 footer{
     margin-top: 100px;
