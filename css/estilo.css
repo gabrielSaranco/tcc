@@ -252,6 +252,25 @@ padding-top: 5%;
     position: center;
  }
 
+ .botão-dietas{
+    border: none;
+    padding: 4%;
+    height: 50px;
+    width: 500%;
+    align-items: 50%;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #0ac91a;
+    transition: aquamarine .2s;
+    color: white;
+    border-radius: 8px;
+ }
+
+ .img-dietas{
+    height: 100px;
+    width: 100px;
+ }
+
 
  .card_sobre_nos{
     display:inline-block;
