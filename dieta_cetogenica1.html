@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<hea <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="criamos esse site com o objetivo de melhorar a saúde das pessoas, com relação a hábitos alimentares, rotinas e etc.">
+    <meta name="keywords" content="alimentos, saúde, exercicíos">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Dieta Cetogênica</title>
+    <style>
+        body {
+            color: #000000;;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            border-bottom: 5px solid #ff013f;
+            background-color: #0ac91a;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: Josefin Sans ;
+            margin: 20px 0;
+        }
+
+        #container-cetogenica {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px #ff013f;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        select {
+            padding: 5px;
+            font-size: 16px;
+        }
+
+        #receita-selecionada {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body style="font-family: Josefin Sans;">
+    <div class="headercetogenica">
+    <header>
+        <h1>Dieta Cetogênica</h1>
+    </header>
+</div>
+
+    <div id="container-cetogenica">
+        <h2>Prós e Contras da Dieta Cetogênica</h2>
+        <h3>Prós:</h3>
+
+        <ul>
+            <li>Pode ajudar na perda de peso</li>
+            <li>Estabiliza os níveis de açúcar no sangue</li>
+            <li>Pode melhorar a saúde cardiovascular</li>
+        </ul>
+
+        <h3>Contras:</h3>
+        <ul>
+            <li>Restringe a ingestão de carboidratos</li>
+            <li>Pode causar cetoacidose em pessoas com certas condições médicas</li>
+            <li>Requer monitoramento constante</li>
+            <br>
+            <img style="width: 500px; padding-left: 180px;" src="img-dietas/dieta-cetogenica.png">
+        </ul>
+
+
+        <h2>Receitas Cetogênicas</h2>
+        <p>Escolha uma receita no menu abaixo:</p>
+        <div class="selectcetogenica"></div>
+        <select id="receitas">
+            <option value="">Selecione uma receita</option>
+            <option value="receita1">Receita 1: Omelete de Abacate</option>
+            <option value="receita2">Receita 2: Frango Grelhado com Brócolis</option>
+            <option value="receita3">Receita 3: Salada César com Bacon</option>
+            <option value="receita4">Receita 4: Salmão Grelhado com Espinafre</option>
+            <option value="receita5">Receita 5: Bife com Aspargos</option>
+            <option value="receita6">Receita 6: Espaguete de Abobrinha com Pesto</option>
+            <option value="receita7">Receita 7: Smoothie de Morango com Coco</option>
+            <option value="receita8">Receita 8: Almôndegas de Frango</option>
+            <option value="receita9">Receita 9: Sopa de Abóbora Cremosa</option>
+            <option value="receita10">Receita 10: Brownie de Chocolate Cetogênico</option>
+        </div>
+        </select>
+
+        <div id="receita-selecionada"></div>
+    </div>
+
+    <script>
+        const receitas = {
+            receita1: {
+                titulo: "Omelete de Abacate",
+                ingredientes: "Ingredientes para omelete de abacate...",
+                modoPreparo: "Modo de preparo para omelete de abacate..."
+            },
+            receita2: {
+                titulo: "Frango Grelhado com Brócolis",
+                ingredientes: "Ingredientes para frango grelhado com brócolis...",
+                modoPreparo: "Modo de preparo para frango grelhado com brócolis..."
+            },
+            receita3: {
+                titulo: "Omelete de Abacate",
+                ingredientes: "Ingredientes para omelete de abacate...",
+                modoPreparo: "Modo de preparo para omelete de abacate..."
+            },
+            receita4: {
+                titulo: "Frango Grelhado com Brócolis",
+                ingredientes: "Ingredientes para frango grelhado com brócolis...",
+                modoPreparo: "Modo de preparo para frango grelhado com brócolis..."
+            },
+            receita5: {
+                titulo: "Omelete de Abacate",
+                ingredientes: "Ingredientes para omelete de abacate...",
+                modoPreparo: "Modo de preparo para omelete de abacate..."
+            },
+            receita6: {
+                titulo: "Frango Grelhado com Brócolis",
+                ingredientes: "Ingredientes para frango grelhado com brócolis...",
+                modoPreparo: "Modo de preparo para frango grelhado com brócolis..."
+            },
+            receita7: {
+                titulo: "Omelete de Abacate",
+                ingredientes: "Ingredientes para omelete de abacate...",
+                modoPreparo: "Modo de preparo para omelete de abacate..."
+            },
+            receita8: {
+                titulo: "Frango Grelhado com Brócolis",
+                ingredientes: "Ingredientes para frango grelhado com brócolis...",
+                modoPreparo: "Modo de preparo para frango grelhado com brócolis..."
+            },
+            receita9: {
+                titulo: "Omelete de Abacate",
+                ingredientes: "Ingredientes para omelete de abacate...",
+                modoPreparo: "Modo de preparo para omelete de abacate..."
+            },
+            receita1: {
+                titulo: "Omelete de Abacate",
+                ingredientes: "Ingredientes para omelete de abacate...",
+                modoPreparo: "Modo de preparo para omelete de abacate..."
+            },
+            
+            // Adicione informações semelhantes para as outras receitas...
+        };
+
+        const receitaSelecionada = document.getElementById("receita-selecionada");
+        const selectReceitas = document.getElementById("receitas");
+
+        selectReceitas.addEventListener("change", function() {
+            const receita = this.value;
+            const dadosReceita = receitas[receita];
+            receitaSelecionada.innerHTML = `
+                <h3>${dadosReceita.titulo}</h3>
+                <h4>Ingredientes:</h4>
+                <p>${dadosReceita.ingredientes}</p>
+                <h4>Modo de Preparo:</h4>
+                <p>${dadosReceita.modoPreparo}</p>
+            `;
+        });
+    </script>
+</body>
+</html>
