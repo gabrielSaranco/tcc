@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="criamos esse site com o objetivo de melhorar a saúde das pessoas, com relação a hábitos alimentares, rotinas e etc.">
+    <meta name="keywords" content="alimentos, saúde, exercicíos">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Dieta Cetogênica</title>
+</head>
+    <style>
+        body {
+            color: #000000;;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            border-bottom: 5px solid #ff013f;
+            background-color: #0ac91a;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: Josefin Sans ;
+            margin: 20px 0;
+        }
+
+        #container-cetogenica {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px #ff013f;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        select {
+            padding: 5px;
+            font-size: 16px;
+        }
+
+        #receita-selecionada {
+            margin-top: 20px;
+        }
+
+
+    </style>
+</head>
+<body style="font-family: Josefin Sans;">
+    <nav class="navbar">
+        <div class="logo">
+            <img style="width: 120px; "  src="img/nosso_logo-removebg-preview.png">
+        </div>
+        <div class="menu">
+            <a href="index.html">Página inicial</a>
+            <a href="Sobre_nós.html">Sobre nós</a>
+            <a href="Calculadora IMC.html">Calculadora IMC</a>
+            <a href="Dietas.html">Dietas</a>
+            <a href="Exercicíos.html">Exercicíos</a>
+        </div>
+   </nav>
+    <div class="headercetogenica">
+    <header>
+        <h1>Dieta  Dash</h1>
+    </header>
+</div>
+
+    <div id="container-cetogenica">
+        <h2>Prós e Contras da Dieta Dash </h2>
+        <h3>Prós:</h3>
+
+        <ul>
+            <li>Melhora a saúde cardiovascular.</li>
+            <li>Incentiva alimentos ricos em nutrientes.</li>
+            <li>Reduz a ingestão de sódio.</li>
+            <li>Pode promover a perda de peso.</li>
+            <li>Oferece flexibilidade na escolha de alimentos.</li>
+        </ul>
+
+        <h3>Contras:</h3>
+        <ul>
+            <li>Pode ser restritiva devido à redução de sódio.</li>
+            <li>Desafia a mudança de hábitos alimentares.</li>
+            <li>Pode ser mais custosa devido à ênfase em alimentos frescos.</li>
+            <li>Exige planejamento e preparação de refeições.</li>
+            <li>Pode parecer menos saborosa devido à restrição de sódio.</li>
+            <br>
+            <img style="width: 500px; padding-left: 180px;" src="img/dieta-dash-removebg-preview.png">
+        </ul>
+
+
+        <h2>Receitas Mediterrâneas</h2>
+        <p>Escolha uma receita no menu abaixo:</p>
+        <div class="selectcetogenica"></div>
+        <select id="receitas">
+            <option value="">Selecione uma receita</option>
+            <option value="receita1">Receita 1: Salada de Grão-de-Bico</option>
+            <option value="receita2">Receita 2:  Salmão Grelhado com Aspargos</option>
+            <option value="receita3">Receita 3: Frango ao Curry com Legumes</option>
+            <option value="receita4">Receita 4:  Espaguete Integral com Tomate e Manjericão</option>
+            <option value="receita5">Receita 5: Salada de Lentilhas</option>
+            <option value="receita6">Receita 6: Tacos de Peixe com Coleslaw</option>
+            <option value="receita7">Receita 7: Frango com Brócolis e Arroz Integral</option>
+            <option value="receita8">Receita 8:  Espetinhos de Carne com Vegetais</option>
+            <option value="receita9">Receita 9:  Sobremesa de Iogurte com Mel e Frutas</option>
+            <option value="receita10">Receita 10: Frutas Grelhadas com Mel e Nozes</option>
+        </div>
+        </select>
+
+        <div id="receita-selecionada"></div>
+    </div>
+    <script>
+        const receitas = {
+            receita1: {
+                titulo: "Salada de Grão-de-Bico",
+                ingredientes: "Grão-de-bico cozido, pepino, tomate, cebola roxa, azeite de oliva, suco de limão, coentro fresco.",
+                modoPreparo: " Misture grão-de-bico, pepino, tomate e cebola em uma tigela. Regue com azeite de oliva, suco de limão e coentro picado."
+            },
+            receita2: {
+                titulo: " Salmão Grelhado com Aspargos",
+                ingredientes: " Filé de salmão, aspargos, azeite de oliva, limão, alho, pimenta preta.",
+                modoPreparo: "Tempere o salmão com azeite, alho picado e suco de limão. Grelhe o salmão e os aspargos até ficarem cozidos."
+            },
+            receita3: {
+                titulo: " Frango ao Curry com Legumes",
+                ingredientes: "Peitos de frango, curry em pó, cebola, cenoura, couve-flor, tomate, leite de coco.",
+                modoPreparo: " Refogue o frango com curry e cebola picada. Adicione cenoura, couve-flor e tomate, e cozinhe com leite de coco até os legumes ficarem macios." 
+            
+            },
+            receita4: {
+                titulo: " Espaguete Integral com Tomate e Manjericão",
+                ingredientes: " Espaguete integral, tomates cereja, alho, manjericão fresco, azeite de oliva.",
+                modoPreparo: " Cozinhe o espaguete, refogue alho em azeite, adicione tomates cereja cortados ao meio e manjericão fresco. Misture com o espaguete cozido."
+            },
+            receita5: {
+                titulo: "Salada de Lentilhas",
+                ingredientes: "Lentilhas cozidas, pimentão vermelho, cebola roxa, aipo, azeite de oliva, vinagre balsâmico.",
+                modoPreparo: " Misture lentilhas, pimentão, cebola e aipo. Tempere com azeite de oliva e vinagre balsâmico."
+            },
+            receita6: {
+                titulo: "Tacos de Peixe com Coleslaw",
+                ingredientes: "Filés de peixe branco, tortilhas integrais, repolho, cenoura, iogurte grego, limão, cominho.",
+                modoPreparo: "Grelhe o peixe, faça uma coleslaw com repolho, cenoura, iogurte grego, suco de limão e cominho. Sirva nos tacos integrais."
+            },
+            receita7: {
+                titulo: " Frango com Brócolis e Arroz Integral",
+                ingredientes: "Peitos de frango, brócolis, alho, arroz integral, caldo de galinha, azeite de oliva.",
+                modoPreparo: "Cozinhe o frango com alho em azeite, adicione brócolis cozidos e misture com arroz integral preparado com caldo de galinha."
+            },
+           
+            receita8: {
+                titulo: "  Espetinhos de Carne com Vegetais",
+                ingredientes: "Carne magra, pimentão, cebola, cogumelos, abobrinha, azeite de oliva, alecrim.",
+                modoPreparo: "Monte espetinhos intercalando carne e vegetais, tempere com azeite e alecrim, grelhe até a carne ficar no ponto desejado."
+            },
+            receita9: {
+                titulo: " Sobremesa de Iogurte com Mel e Frutas",
+                ingredientes: " Iogurte grego, mel, morangos, mirtilos.",
+                modoPreparo: " Coloque iogurte grego em taças, adicione mel e decore com morangos e mirtilos. Sirva gelado."
+            },
+            receita10: {
+                titulo: " Frutas Grelhadas com Mel e Nozes",
+                ingredientes: " Pêssegos, abacaxi, mel, nozes.",
+                modoPreparo: "Grelhe pêssegos e abacaxi, regue com mel e polvilhe nozes picadas por cima. Sirva como sobremesa."
+            },
+            
+            // Adicione informações semelhantes para as outras receitas...
+        };
+
+        const receitaSelecionada = document.getElementById("receita-selecionada");
+        const selectReceitas = document.getElementById("receitas");
+
+        selectReceitas.addEventListener("change", function() {
+            const receita = this.value;
+            const dadosReceita = receitas[receita];
+            receitaSelecionada.innerHTML = `
+                <h3>${dadosReceita.titulo}</h3>
+                <h4>Ingredientes:</h4>
+                <p>${dadosReceita.ingredientes}</p>
+                <h4>Modo de Preparo:</h4>
+                <p>${dadosReceita.modoPreparo}</p>
+            `;
+        });
+    </script>
+</body>
+</html>
