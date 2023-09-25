@@ -1,220 +1,194 @@
+
 <!DOCTYPE html>
-
 <html lang="pt-BR">
-
 <head>
-
-    <meta charset="UTF-8">
-
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Dieta Cetogênica</title>
-
+    <meta name="description" content="criamos esse site com o objetivo de melhorar a saúde das pessoas, com relação a hábitos alimentares, rotinas e etc.">
+    <meta name="keywords" content="alimentos, saúde, exercicíos">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Dieta Lowcarb</title>
+</head>
     <style>
-
         body {
-
-            font-family: Arial, sans-serif;
-
-            background-image: url('background.jpg'); /* Insira o caminho da sua imagem de fundo aqui */
-
-            background-size: cover;
-
-            background-repeat: no-repeat;
-
-            background-attachment: fixed;
-
+            color: #000000;;
+            background-color: #f0f0f0;
             margin: 0;
-
             padding: 0;
-
         }
-
- 
 
         header {
-
+            border-bottom: 5px solid #ff013f;
+            background-color: #0ac91a;
+            color: #fff;
+            padding: 10px 0;
             text-align: center;
-
-            padding: 30px;
-
-            background-color: rgb(45, 210, 30);
-
-            color: white;
-
         }
-
- 
 
         h1 {
-
-            font-size: 36px;
-
+            font-family: Josefin Sans ;
+            margin: 20px 0;
         }
 
- 
-
-        main {
-
+        #container-cetogenica {
             max-width: 800px;
-
             margin: 20px auto;
-
+            background-color: #fff;
             padding: 20px;
-
-            background-color: rgba(255, 255, 255, 0.8);
-
-            border-radius: 10px;
-
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-
+            border-radius: 5px;
+            box-shadow: 0 0 10px #ff013f;
         }
-
- 
-
-        h2 {
-
-            font-size: 24px;
-
-        }
-
- 
-
-        p {
-
-            font-size: 18px;
-
-            margin-bottom: 1.5px; /* Espaçamento de 1,5 pixels entre os parágrafos */
-
-        }
-
- 
 
         img {
-
             max-width: 100%;
-
             height: auto;
-
-            display: block;
-
-            margin: 20px auto;
-
         }
 
+        select {
+            padding: 5px;
+            font-size: 16px;
+        }
+
+        #receita-selecionada {
+            margin-top: 20px;
+        }
+
+
     </style>
-
 </head>
-
-<body>
-
+<body style="font-family: Josefin Sans;">
+    <nav class="navbar">
+        <div class="logo">
+           
+            <img style="width: 120px; "  src="img/nosso_logo-removebg-preview.png">
+        </div>
+        <div class="menu">
+            <a href="index.html">Página inicial</a>
+            <a href="Sobre_nós.html">Sobre nós</a>
+            <a href="Calculadora IMC.html">Calculadora IMC</a>
+            <a href="Dietas.html">Dietas</a>
+            <a href="Exercicíos.html">Exercicíos</a>
+        </div>
+   </nav>
+    <div class="headercetogenica">
     <header>
-
-        <h1>Dieta Cetogênica</h1>
-
+        <h1>Dieta Lowcarb</h1>
     </header>
+</div>
 
- 
-
-    <main>
-
-        <h2>Resumo da Dieta Cetogênica</h2>
-
-        <p>A dieta cetogênica é uma abordagem nutricional que enfatiza a ingestão de gorduras saudáveis e a redução significativa de carboidratos. Isso leva o corpo a um estado metabólico chamado cetose, no qual ele queima gordura para obter energia.</p>
-
- 
-
-        <h2>Costumes a adquirir</h2>
-
-        <ol>
-
-            <li>Reduza a ingestão de carboidratos a um nível muito baixo (geralmente menos de 50g por dia).</li>
-
-            <li>Aumente o consumo de gorduras saudáveis, como abacates, azeite de oliva e nozes.</li>
-
-            <li>Mantenha uma ingestão moderada de proteínas, obtendo-as de carnes magras, peixes e ovos.</li>
-
-            <li>Acompanhe sua ingestão de macronutrientes para manter uma proporção típica de 70-75% de gordura, 20-25% de proteína e 5-10% de carboidratos.</li>
-
-            <li>Mantenha-se hidratado e monitore seus níveis de cetonas no sangue.</li>
-
-        </ol>
-
- 
-
-        <img src="dieta.jpg" alt="Imagem da Dieta Cetogênica">
-
- 
-        <div class="btn-group">
-            <button class="btn btn-secondary btn-lg" type="button">
-              Botão grande dividido
-            </button>
-            <button type="button" class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <span class="sr-only">Dropdown</span>
-            </button>
-            <div class="dropdown-menu">
-              ...
-            </div>
-          </div>
-
-
-
-
-
-
-
-        <h2>Receita de Omelete Cetogênico</h2>
-
-        <p>Aqui está uma receita rápida e deliciosa de omelete cetogênico para você experimentar.</p>
-
- 
-
-        <h3>Ingredientes:</h3>
+    <div id="container-cetogenica">
+        <h2>Prós e Contras da Dieta Lowcarb</h2>
+        <h3>Prós:</h3>
 
         <ul>
-
-            <li>2 ovos</li>
-
-            <li>2 colheres de sopa de creme de leite ou leite de amêndoa sem açúcar</li>
-
-            <li>2 colheres de sopa de queijo cheddar ralado</li>
-
-            <li>2 colheres de sopa de espinafre picado</li>
-
-            <li>Sal e pimenta a gosto</li>
-
+            <li>Auxilio na perda de peso</li>
+            <li>Controle dos níveis de açúcar no sangue</li>
+            <li>Redução do apetite</li>
+            <li>Melhoria dos Fatores de Risco Cardiovasculares</li>
         </ul>
 
- 
+        <h3>Contras:</h3>
+        <ul>
+            <li>Restringe a ingestão de carboidratos que incialmente pode haver efeitos colaterais</li>
+            <li>Falta de Fibras</li>
+            <li>Efeito variável de pessoa a pessoa</li>
+            <br>
+            <img style="width: 500px; padding-left: 180px;" src="img-dietas/Dieta-low-carb.png">
+        </ul>
 
-        <h3>Modo de Preparo:</h3>
 
-        <ol>
+        <h2>Receitas Cetogênicas</h2>
+        <p>Escolha uma receita no menu abaixo:</p>
+        <div class="selectcetogenica"></div>
+        <select id="receitas">
+            <option value="">Selecione uma receita</option>
+            <option value="receita1">Receita 1: Salada de Frango com Abacate</option>
+            <option value="receita2">Receita 2: Salmão Grelhado com espinafre e alho</option>
+            <option value="receita3">Receita 3: Ovos mexidos com vegetais</option>
+            <option value="receita4">Receita 4: Couve Flor assada com parmesão</option>
+            <option value="receita5">Receita 5: Wrap de alface com carne moída</option>
+            <option value="receita6">Receita 6: Sopa de brócolis e queijo</option>
+            <option value="receita7">Receita 7: Peito de frango recheado com espinafre e queijo feta</option>
+            <option value="receita8">Receita 8: Espaguete de abobrinha com molho de tomate</option>
+            <option value="receita9">Receita 9: Bifé grelhado com espargos</option>
+            <option value="receita10">Receita 10: Salada de camarão com abacate</option>
+        </div>
+        </select>
 
-            <li>Quebre os ovos em uma tigela, adicione o creme de leite ou leite de amêndoa e misture bem.</li>
+        <div id="receita-selecionada"></div>
+    </div>
+    <script>
+        const receitas = {
+            receita1: {
+                titulo: "Salada de Frango com abacate",
+                ingredientes: "Peito de frango grelhado, abacate, alface, tomate cereja, pepino e molho de iogurte com limão.",
+                modoPreparo: "Corte o peito de frango grelhado em pedaços pequenos.Corte o abacate em cubos.Em uma tigela, coloque a alface, o tomate cereja cortado ao meio, o pepino em rodelas, o frango e o abacate. Regue a salada com um molho de iogurte misturado com suco de limão, sal e pimenta. Misture tudo suavemente e sirva."
+            },
+            receita2: {
+                titulo: "Frango Grelhado com Brócolis",
+                ingredientes: "Peitos de frango sem pele, brócolis fresco, azeite de oliva, sal, pimenta, temperos e ervas a gosto (como alho em pó, cebola em pó, pimenta caiena, orégano, etc.).",
+                modoPreparo: "Para preparar o frango grelhado com brócolis em uma dieta cetogênica, comece temperando os peitos de frango com sal, pimenta e suas especiarias preferidas, como alho em pó e orégano. Em seguida, aqueça uma grelha ou frigideira antiaderente em fogo médio-alto, adicione um pouco de azeite de oliva e grelhe os peitos de frango até que estejam completamente cozidos, virando-os ocasionalmente. Enquanto isso, cozinhe o brócolis a vapor ou fervendo até que fique macio, mas ainda crocante. Quando o frango estiver pronto, retire-o da grelha, deixe descansar por alguns minutos e sirva com o brócolis cozido. Regue com azeite de oliva extra virgem para aumentar a quantidade de gordura saudável na refeição, mantendo os carboidratos a um mínimo para atender às diretrizes da dieta cetogênica."
+            },
+            receita3: {
+                titulo: "Salada César com Bacon",
+                ingredientes: "Alface romana picada, peito de frango grelhado (opcional), bacon cozido (sem açúcar), queijo parmesão ralado, maionese, azeite de oliva extra virgem, mostarda dijon, alho picado, suco de limão fresco, molho de anchova ou pasta de anchova (opcional), sal e pimenta.",
+                modoPreparo: "Comece preparando o molho Caesar cetogênico misturando 1/2 xícara de maionese, 2 colheres de sopa de azeite de oliva extra virgem, 2 colheres de chá de mostarda dijon, 2 dentes de alho picados, 2 colheres de sopa de suco de limão fresco e 1 colher de chá de molho de anchova ou pasta de anchova (opcional). Tempere a gosto com sal e pimenta. Em seguida, grelhe ou cozinhe o peito de frango (opcional), corte-o em tiras e reserve. Em uma tigela grande, coloque a alface romana picada e o bacon cozido e picado, adicione o peito de frango grelhado (se estiver usando) e polvilhe com queijo parmesão ralado. Despeje o molho Caesar cetogênico sobre a salada e misture bem todos os ingredientes até que a salada esteja bem coberta pelo molho. Sirva imediatamente para desfrutar de uma refeição saborosa e adequada para a dieta cetogênica." 
+            
+            },
+            receita4: {
+                titulo: "Salmão Grelhado com Espinafre",
+                ingredientes: "Filé de salmão, espinafre fresco, azeite de oliva, alho picado, sal, pimenta, limão (opcional, para decorar).",
+                modoPreparo: "Tempere o filé de salmão com sal e pimenta a gosto e grelhe-o em uma frigideira antiaderente pré-aquecida com um pouco de azeite de oliva por cerca de 3 a 5 minutos de cada lado, ou até que o salmão esteja cozido a gosto. Enquanto grelha o salmão, refogue o alho picado em outra frigideira com azeite até ficar perfumado e adicione o espinafre fresco, cozinhando até murchar e temperando com sal e pimenta. Coloque o salmão grelhado sobre a cama de espinafre cozido e, se desejar, decore com um toque de limão. Sirva imediatamente para uma refeição cetogênica deliciosa e nutritiva."
+            },
+            receita5: {
+                titulo: "Bife com Aspargos",
+                ingredientes: "Bife de sua escolha, aspargos frescos, azeite de oliva, sal, pimenta, temperos a gosto (opcional).",
+                modoPreparo: "Tempere o bife com sal, pimenta e seus temperos favoritos, deixando-o descansar por alguns minutos para absorver os sabores. Enquanto isso, lave e corte os aspargos, removendo as extremidades mais duras. Em seguida, pré-aqueça uma frigideira ou grelha em fogo médio-alto com um pouco de azeite de oliva. Grelhe o bife até atingir o ponto de cozimento desejado (geralmente de 3 a 5 minutos de cada lado, dependendo da espessura e preferência). Ao mesmo tempo, grelhe os aspargos até que fiquem macios e levemente dourados, temperando com sal e pimenta. Retire ambos do fogo e sirva o bife com os aspargos grelhados ao lado, criando uma refeição cetogênica deliciosa e equilibrada."
+            },
+            receita6: {
+                titulo: "Espaguete de Abobrinha com Pesto ",
+                ingredientes: "Abobrinhas, azeite de oliva, sal, pimenta, folhas de manjericão fresco, queijo parmesão ralado, nozes ou pinhões, alho, azeite de oliva extra virgem.",
+                modoPreparo: "Para preparar o espaguete de abobrinha, corte as abobrinhas em tiras finas semelhantes a espaguete e, em seguida, aqueça uma frigideira grande com azeite de oliva em fogo médio, cozinhando as tiras de abobrinha até que fiquem macias, temperando com sal e pimenta. Enquanto isso, faça o pesto combinando folhas de manjericão fresco, queijo parmesão ralado, nozes ou pinhões e alho em um processador de alimentos, pulsando até obter uma mistura homogênea. Com o processador em funcionamento, adicione o azeite de oliva extra virgem até que a mistura fique bem incorporada. Tempere com sal e pimenta. Misture o espaguete de abobrinha cozido com o pesto cetogênico e sirva quente, podendo adicionar queijo parmesão extra por cima, se desejar. Esta refeição é rica em gorduras saudáveis e adequada para a dieta cetogênica. Ajuste as quantidades conforme necessário para o número de porções desejado."
+            },
+            receita7: {
+                titulo: "Smoothie de Morango com Coco",
+                ingredientes: "Morangos congelados, leite de coco (sem açúcar), água, óleo de coco (opcional), adoçante cetogênico (opcional), gelo (opcional).",
+                modoPreparo: "No liquidificador, combine 1/2 xícara de morangos congelados, 1/4 xícara de leite de coco sem açúcar, 1/4 xícara de água e 1 colher de sopa de óleo de coco (opcional). Adoce a gosto com um adoçante cetogênico, se desejado. Adicione gelo para uma textura mais espessa, se preferir. Misture até obter uma mistura homogênea e cremosa. Ajuste os sabores conforme necessário e sirva imediatamente."
+            },
+            receita8: {
+                titulo: "Almôndegas de Frango",
+                ingredientes: "Peito de frango moído, queijo parmesão ralado, migalhas de pão de amêndoa (ou farinha de amêndoa), ovo, alho picado, salsinha fresca picada, sal, pimenta, azeite de oliva.",
+                modoPreparo: "Misture em uma tigela grande o peito de frango moído, o ovo, a farinha de amêndoa, o queijo parmesão (opcional), o alho, a cebola, o sal, a pimenta, a páprica (opcional) e as folhas de manjericão (opcional) até obter uma massa homogênea. Modele pequenas almôndegas com as mãos e grelhe em uma frigideira com azeite de oliva aquecido em fogo médio, virando ocasionalmente, até que fiquem douradas e cozidas por completo, cerca de 10-12 minutos. Retire do fogo, escorra o excesso de óleo em papel toalha e sirva quente com o molho de sua escolha, acompanhado de vegetais de folhas verdes ou uma salada cetogênica."
+            },
+            receita9: {
+                titulo: "Sopa de Abóbora Cremosa",
+                ingredientes: "Abóbora, cebola, alho, manteiga ou óleo de coco, caldo de galinha ou caldo de legumes com baixo teor de carboidratos, sal, pimenta, noz-moscada (opcional), creme de leite ou creme de coco (opcional).",
+                modoPreparo: "Em uma panela grande, derreta a manteiga ou aqueça o óleo de coco em fogo médio, depois adicione a cebola e o alho picados e refogue até que fiquem macios e dourados. Acrescente os pedaços de abóbora e continue cozinhando por alguns minutos. Despeje o caldo de galinha ou caldo de legumes sobre os legumes, deixe ferver e, em seguida, reduza o fogo e cozinhe por 20-25 minutos até que a abóbora esteja macia. Use um liquidificador de imersão para purê a sopa até obter uma consistência cremosa. Tempere com sal, pimenta e uma pitada de noz-moscada, se desejar. Adicione creme de leite ou creme de coco para uma textura mais rica (opcional) e aqueça novamente antes de servir. Sirva quente."
+            },
+            receita10: {
+                titulo: "Brownie de Chocolate Cetogênico",
+                ingredientes: "Manteiga derretida, cacau em pó sem açúcar, adoçante cetogênico (como eritritol ou stevia), ovos, extrato de baunilha, farinha de amêndoa, sal, fermento em pó, nozes picadas (opcional).",
+                modoPreparo: "Pré-aqueça o forno a 180°C e unte uma forma quadrada ou retangular. Em uma tigela, misture a manteiga derretida e o cacau em pó até ficar suave, adicione o adoçante cetogênico, ovos e extrato de baunilha, misturando até obter uma massa homogênea. Em outra tigela, combine a farinha de amêndoa, o sal e o fermento em pó. Incorporar os ingredientes secos na mistura de ingredientes úmidos até que tudo esteja bem combinado. Se desejar, adicione as nozes picadas à massa. Despeje a massa na forma preparada e nivele a superfície. Asse por 20-25 minutos ou até que um palito inserido no centro saia com algumas migalhas úmidas. Deixe esfriar completamente antes de cortar"
+            },
+            
+            // Adicione informações semelhantes para as outras receitas...
+        };
 
-            <li>Em uma frigideira antiaderente untada com óleo de coco ou manteiga, aqueça em fogo médio.</li>
+        const receitaSelecionada = document.getElementById("receita-selecionada");
+        const selectReceitas = document.getElementById("receitas");
 
-            <li>Despeje a mistura de ovos na frigideira e espalhe uniformemente.</li>
-
-            <li>Adicione o queijo cheddar ralado e o espinafre picado sobre os ovos.</li>
-
-            <li>Tempere com sal e pimenta a gosto.</li>
-
-            <li>Cozinhe por 2-3 minutos até que os ovos estejam quase completamente cozidos.</li>
-
-            <li>Dobre o omelete ao meio e cozinhe por mais 1-2 minutos até que o queijo esteja derretido e o omelete esteja dourado por fora.</li>
-
-            <li>Sirva quente e aproveite!</li>
-
-        </ol>
-
- 
-
-        <img src="omelete.jpg" alt="Imagem do Omelete Cetogênico">
-
-    </main>
-
+        selectReceitas.addEventListener("change", function() {
+            const receita = this.value;
+            const dadosReceita = receitas[receita];
+            receitaSelecionada.innerHTML = `
+                <h3>${dadosReceita.titulo}</h3>
+                <h4>Ingredientes:</h4>
+                <p>${dadosReceita.ingredientes}</p>
+                <h4>Modo de Preparo:</h4>
+                <p>${dadosReceita.modoPreparo}</p>
+            `;
+        });
+    </script>
 </body>
-
 </html>
