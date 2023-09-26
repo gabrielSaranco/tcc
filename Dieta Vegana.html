@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="criamos esse site com o objetivo de melhorar a saúde das pessoas, com relação a hábitos alimentares, rotinas e etc.">
+    <meta name="keywords" content="alimentos, saúde, exercicíos">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Dieta Cetogênica</title>
+</head>
+    <style>
+        body {
+            color: #000000;;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            border-bottom: 5px solid #ff013f;
+            background-color: #0ac91a;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: Josefin Sans ;
+            margin: 20px 0;
+        }
+
+        #container-cetogenica {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px #ff013f;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        select {
+            padding: 5px;
+            font-size: 16px;
+        }
+
+        #receita-selecionada {
+            margin-top: 20px;
+        }
+
+
+    </style>
+</head>
+<body style="font-family: Josefin Sans;">
+    <nav class="navbar">
+        <div class="logo">
+           
+            <img style="width: 120px; "  src="img/nosso_logo-removebg-preview.png">
+        </div>
+        <div class="menu">
+            <a href="index.html">Página inicial</a>
+            <a href="Sobre_nós.html">Sobre nós</a>
+            <a href="Calculadora IMC.html">Calculadora IMC</a>
+            <a href="Dietas.html">Dietas</a>
+            <a href="Exercicíos.html">Exercicíos</a>
+        </div>
+   </nav>
+    <div class="headercetogenica">
+    <header>
+        <h1>Dieta Vegana</h1>
+    </header>
+</div>
+
+    <div id="container-cetogenica">
+        <h2>Dieta Vegana</h2>
+        <h3>Prós:</h3>
+
+        <ul>
+            <li>Melhora da saúde cardiovascular.</li>
+            <li>Redução do risco de doenças crônicas.</li>
+            <li>Sustentabilidade ambiental.</li>
+            <li>Motivações éticas relacionadas aos direitos dos animais.</li>
+        </ul>
+
+        <h3>Contras:</h3>
+        <ul>
+            <li>Possibilidade de deficiências nutricionais se não for bem planejada.</li>
+            <li>Necessidade de conhecimento nutricional para atender às necessidades.</li>
+            <li>Restrição alimentar social.</li>
+            <li>Desafios de obtenção de proteína completa.</li>
+            <li>Possível custo mais elevado.</li>
+            <li>Adaptação pode ser desafiadora para algumas pessoas.</li>
+            <br>
+            <br>
+            <img style="width: 550px; padding-left: 165px;" src="img-dietas/dieta-vegan-removebg-preview.png">
+        </ul>
+   
+
+
+        <h2>Dieta Vegana</h2>
+        <p>Escolha uma receita no menu abaixo:</p>
+        <div class="selectcetogenica"></div>
+        <select id="receitas">
+            <option value="">Selecione uma receita</option>
+            <option value="receita1">Receita 1: Curry de Grão-de-Bico</option>
+            <option value="receita2">Receita 2: Risoto de Cogumelos</option>
+            <option value="receita3">Receita 3: Tacos de Lentilha</option>
+            <option value="receita4"> Receita 4: Espaguete de Abobrinha com Pesto de Manjericão</option>
+            <option value="receita5">Receita 5: feijão Preto com Quinoa</option>
+            <option value="receita6">Receita 6: Sopa de Abóbora</option>
+            <option value="receita7">Receita 7: Sanduíche Vegano de Falafel</option>
+            <option value="receita8">Receita 8: Curry de Legumes</option>
+            <option value="receita9">Receita 9: Brownie Vegano</option>
+            <option value="receita10">Receita 10: Sorvete Vegano de Banana</option>
+        </div>
+        </select>
+
+        <div id="receita-selecionada"></div>
+    </div>
+    <script>
+        const receitas = {
+            receita1: {
+                titulo: "Curry de Grão-de-Bico",
+                ingredientes: "Grão-de-bico, cebola, alho, tomate, leite de coco, curry em pó, óleo de coco, sal.",
+                modoPreparo: " Refogue a cebola e o alho no óleo de coco. Adicione o tomate picado, o grão-de-bico cozido e o curry em pó. Cozinhe por alguns minutos, depois adicione o leite de coco e sal a gosto. Deixe cozinhar até que o molho engrosse."
+            },
+
+
+            receita2: {
+                titulo: " Risoto de Cogumelos",
+                ingredientes: "Arroz arbóreo, cogumelos, cebola, alho, caldo de legumes, vinho branco, azeite, sal, pimenta.",
+                modoPreparo: " Refogue a cebola e o alho no azeite, adicione os cogumelos e cozinhe até dourarem. Adicione o arroz e refogue por alguns minutos. Acrescente o vinho branco e mexa até evaporar. Adicione o caldo de legumes aos poucos, mexendo até o arroz ficar cremoso. Tempere com sal e pimenta."
+            },
+
+
+            receita3: {
+                titulo: "Tacos de Lentilha",
+                ingredientes: " Lentilhas cozidas, tortilhas de milho, abacate, salsa, cebola roxa, alface, limão, cominho, sal.",
+                modoPreparo: " Misture as lentilhas cozidas com cominho, sal e suco de limão. Monte os tacos com as lentilhas temperadas, abacate em fatias, salsa, cebola roxa e alface." 
+            
+            },
+
+
+            receita4: {
+                titulo: "Espaguete de Abobrinha com Pesto de Manjericão",
+                ingredientes: " Abobrinhas, manjericão fresco, pinhões, alho, azeite de oliva, sal, pimenta, levedura nutricional.",
+                modoPreparo: " Faça o pesto combinando manjericão, pinhões, alho, azeite de oliva, sal, pimenta e levedura nutricional no processador de alimentos. Espiralize as abobrinhas em forma de espaguete e misture com o pesto."
+            },
+
+
+            receita5: {
+                titulo: "feijão Preto com Quinoa",
+                ingredientes: " Feijão preto, quinoa, milho, pimentões, cebola, coentro, cominho, azeite, sal.",
+                modoPreparo: "Refogue a cebola e o pimentão no azeite até ficarem macios. Adicione o feijão preto cozido, a quinoa cozida, o milho e tempere com cominho, sal e coentro picado."
+            },
+
+
+            receita6: {
+                titulo: "Sopa de Abóbora",
+                ingredientes: "Abóbora, cebola, alho, caldo de legumes, azeite, sal, pimenta, noz-moscada.",
+                modoPreparo: " Refogue a cebola e o alho no azeite até dourarem. Adicione a abóbora picada e o caldo de legumes. Cozinhe até que a abóbora esteja macia, depois bata a sopa até ficar homogênea. Tempere com sal, pimenta e noz-moscada a gosto."
+            },
+
+
+
+            receita7: {
+                titulo: "Sanduíche Vegano de Falafel",
+                ingredientes: "Bolinhas de falafel, pão pita, alface, tomate, pepino, molho tahine.",
+                modoPreparo: "Asse as bolinhas de falafel de acordo com as instruções da embalagem. Monte os sanduíches com pão pita, falafel, alface, tomate, pepino e molho tahine."
+            },
+
+            
+            receita8: {
+                titulo: " Curry de Legumes",
+                ingredientes: "Legumes variados (cenoura, batata, brócolis, ervilha), leite de coco, curry em pó, cebola, alho, azeite, sal, pimenta.",
+                modoPreparo: "Refogue a cebola e o alho no azeite até dourarem. Adicione os legumes cortados em pedaços e o curry em pó. Cozinhe até que os legumes estejam macios, depois adicione o leite de coco. Tempere com sal e pimenta."
+            },
+
+
+            receita9: {
+                titulo: "Brownie Vegano",
+                ingredientes: "Farinha de trigo integral, cacau em pó, açúcar de coco, óleo de coco, leite vegetal, extrato de baunilha, fermento em pó.",
+                modoPreparo: " Misture todos os ingredientes até formar uma massa homogênea. Despeje em uma forma untada e asse a 180°C por cerca de 25-30 minutos. Deixe esfriar antes de cortar em pedaços."
+            },
+
+            
+            receita10: {
+                titulo: "Sorvete Vegano de Banana",
+                ingredientes: "Bananas maduras congeladas, leite de amêndoas (ou outro leite vegetal), extrato de baunilha.",
+                modoPreparo: "Coloque as bananas congeladas, o leite vegetal e o extrato de baunilha em um processador de alimentos. Processe até obter uma consistência cremosa. Sirva imediatamente como um sorvete de banana vegano."
+            },
+            
+            // Adicione informações semelhantes para as outras receitas...
+        };
+
+        const receitaSelecionada = document.getElementById("receita-selecionada");
+        const selectReceitas = document.getElementById("receitas");
+
+        selectReceitas.addEventListener("change", function() {
+            const receita = this.value;
+            const dadosReceita = receitas[receita];
+            receitaSelecionada.innerHTML = `
+                <h3>${dadosReceita.titulo}</h3>
+                <h4>Ingredientes:</h4>
+                <p>${dadosReceita.ingredientes}</p>
+                <h4>Modo de Preparo:</h4>
+                <p>${dadosReceita.modoPreparo}</p>
+            `;
+        });
+    </script>
+</body>
+</html>

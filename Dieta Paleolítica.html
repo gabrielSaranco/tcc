@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="criamos esse site com o objetivo de melhorar a saúde das pessoas, com relação a hábitos alimentares, rotinas e etc.">
+    <meta name="keywords" content="alimentos, saúde, exercicíos">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Dieta Cetogênica</title>
+</head>
+    <style>
+        body {
+            color: #000000;;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            border-bottom: 5px solid #ff013f;
+            background-color: #0ac91a;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: Josefin Sans ;
+            margin: 20px 0;
+        }
+
+        #container-cetogenica {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px #ff013f;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        select {
+            padding: 5px;
+            font-size: 16px;
+        }
+
+        #receita-selecionada {
+            margin-top: 20px;
+        }
+
+
+    </style>
+</head>
+<body style="font-family: Josefin Sans;">
+    <nav class="navbar">
+        <div class="logo">
+           
+            <img style="width: 120px; "  src="img/nosso_logo-removebg-preview.png">
+        </div>
+        <div class="menu">
+            <a href="index.html">Página inicial</a>
+            <a href="Sobre_nós.html">Sobre nós</a>
+            <a href="Calculadora IMC.html">Calculadora IMC</a>
+            <a href="Dietas.html">Dietas</a>
+            <a href="Exercicíos.html">Exercicíos</a>
+        </div>
+   </nav>
+    <div class="headercetogenica">
+    <header>
+        <h1>Dieta Paleolítica</h1>
+    </header>
+</div>
+
+    <div id="container-cetogenica">
+        <h2>Dieta Paleolítica</h2>
+        <h3>Prós:</h3>
+
+        <ul>
+            <li>Enfatiza alimentos naturais e não processados.</li>
+            <li>Promove a ingestão de proteínas.</li>
+            <li>Controla o açúcar e os carboidratos refinados.</li>
+            <li>Incentiva o consumo de vegetais e frutas.</li>
+            <li>Pode beneficiar pessoas com sensibilidades alimentares.</li>
+        </ul>
+
+        <h3>Contras:</h3>
+        <ul>
+            <li>Restrições alimentares rigorosas.</li>
+            <li>Eliminação de grupos alimentares importantes, como grãos e laticínios.</li>
+            <li>Pode ser difícil de seguir a longo prazo.</li>
+            <li>Possível falta de nutrientes essenciais.</li>
+            <li>Controvérsias sobre a precisão histórica da dieta paleo.</li>
+            <li>Dificuldade em encontrar opções alimentares em certos contextos sociais.</li>
+            <br>
+            <br>
+            <img style="width: 550px; padding-left: 165px;" src="img/img paleolitica.png">
+        </ul>
+   
+
+
+        <h2>Dieta Paleolítica</h2>
+        <p>Escolha uma receita no menu abaixo:</p>
+        <div class="selectcetogenica"></div>
+        <select id="receitas">
+            <option value="">Selecione uma receita</option>
+            <option value="receita1">Receita 1: Frango ao Curry com Couve-Flor</option>
+            <option value="receita2">Receita 2: Salada de Atum com Abacate</option>
+            <option value="receita3">Receita 3: Omelete de Espinafre e Tomate</option>
+            <option value="receita4">Receita 4: Salmão Grelhado com Aspargos</option>
+            <option value="receita5">Receita 5: Hambúrguer de Peru com Abobrinha Frita</option>
+            <option value="receita6">Receita 6: Sopa de Abóbora</option>
+            <option value="receita7">Receita 7: Carne de Porco com Espargos</option>
+            <option value="receita8">Receita 8: Salada de Frutas com Hortelã</option>
+            <option value="receita9">Receita 9: Pudim de Chia com Coco</option>
+            <option value="receita10">Receita 10:Brownie de Abacate e Cacau</option>
+        </div>
+        </select>
+
+        <div id="receita-selecionada"></div>
+    </div>
+    <script>
+        const receitas = {
+            receita1: {
+                titulo: "Frango ao Curry com Couve-Flor",
+                ingredientes: "Peito de frango, couve-flor, azeite de coco, curry em pó, sal, pimenta.",
+                modoPreparo: " Em uma frigideira, aqueça o azeite de coco. Adicione os pedaços de peito de frango e cozinhe até dourar. Em seguida, adicione a couve-flor em pedaços e tempere com curry, sal e pimenta. Cozinhe até que o frango esteja cozido e a couve-flor esteja macia."
+            },
+
+
+            receita2: {
+                titulo: " Salada de Atum com Abacate",
+                ingredientes: "Atum enlatado, abacate, cebola roxa, azeite de oliva, suco de limão, sal, pimenta.",
+                modoPreparo: "Em uma tigela grande, misture o atum escorrido, o abacate em cubos e a cebola roxa picada. Regue com azeite de oliva e suco de limão. Tempere com sal e pimenta a gosto. Misture bem e sirva."
+            },
+
+
+            receita3: {
+                titulo: "Omelete de Espinafre e Tomate",
+                ingredientes: "Ovos, espinafre fresco, tomate, azeite de oliva, sal, pimenta.",
+                modoPreparo: ": Em uma frigideira antiaderente, aqueça o azeite de oliva. Adicione o espinafre e o tomate cortado em cubos. Enquanto isso, bata os ovos em uma tigela e despeje sobre os vegetais na frigideira. Tempere com sal e pimenta. Cozinhe até que os ovos estejam firmes e a omelete esteja pronta para ser dobrada ao meio." 
+            
+            },
+
+
+            receita4: {
+                titulo: " Salmão Grelhado com Aspargos",
+                ingredientes: "Filé de salmão, aspargos, azeite de oliva, suco de limão, alho, sal, pimenta.",
+                modoPreparo: "Tempere o filé de salmão com suco de limão, alho picado, sal e pimenta. Grelhe o salmão e os aspargos em uma grelha quente untada com azeite de oliva até que o salmão esteja cozido e os aspargos estejam macios."
+            },
+
+
+            receita5: {
+                titulo: " Hambúrguer de Peru com Abobrinha Frita",
+                ingredientes: "Carne moída de peru, abobrinha, cebola, alho, azeite de oliva, sal, pimenta.",
+                modoPreparo: "Em uma tigela, misture a carne moída de peru com cebola e alho picados. Modele hambúrgueres e grelhe-os em uma frigideira com azeite de oliva até que estejam cozidos. Enquanto isso, corte a abobrinha em fatias finas e frite-as em azeite quente até ficarem douradas. Tempere com sal e pimenta."
+            },
+
+
+            receita6: {
+                titulo: "Sopa de Abóbora",
+                ingredientes: "Abóbora, caldo de galinha, cebola, alho, azeite de oliva, sal, pimenta.",
+                modoPreparo: " Descasque e corte a abóbora em cubos. Em uma panela grande, aqueça o azeite de oliva e refogue a cebola e o alho picados até ficarem dourados. Adicione a abóbora e refogue por mais alguns minutos. Despeje o caldo de galinha sobre a abóbora e deixe ferver até que a abóbora esteja macia. Use um liquidificador de imersão para purê a sopa até ficar homogênea. Tempere com sal e pimenta a gosto e sirva quente."
+            },
+
+
+
+            receita7: {
+                titulo: "Carne de Porco com Espargos",
+                ingredientes: "Lombo de porco, aspargos, azeite de oliva, alho, sal, pimenta.",
+                modoPreparo: " Tempere o lombo de porco com alho picado, sal e pimenta. Em uma frigideira grande, aqueça o azeite de oliva e doure a carne de porco dos dois lados até que esteja bem cozida. Enquanto isso, grelhe os aspargos com azeite de oliva e sal até ficarem macios. Sirva a carne de porco com os aspargos grelhados."
+            },
+
+            
+            receita8: {
+                titulo: " Salada de Frutas com Hortelã",
+                ingredientes: " Morangos, abacaxi, kiwi, hortelã fresca.",
+                modoPreparo: "Corte os morangos, abacaxi e kiwi em pedaços e misture em uma tigela. Adicione folhas de hortelã fresca picadas por cima e misture delicadamente. Sirva como uma refrescante sobremesa paleolítica."
+            },
+
+
+            receita9: {
+                titulo: " Pudim de Chia com Coco",
+                ingredientes: "Sementes de chia, leite de coco, mel, extrato de baunilha.",
+                modoPreparo: "Misture sementes de chia, leite de coco, mel e extrato de baunilha em uma tigela. Deixe descansar na geladeira por algumas horas ou durante a noite, mexendo ocasionalmente até que a mistura se transforme em um pudim espesso. Sirva com coco ralado por cima."
+            },
+
+            
+            receita10: {
+                titulo: "Brownie de Abacate e Cacau",
+                ingredientes: "Abacate maduro, cacau em pó, mel, extrato de baunilha, sal.",
+                modoPreparo: " Em um processador de alimentos, combine o abacate, cacau em pó, mel, extrato de baunilha e uma pitada de sal. Misture até obter uma massa homogênea. Espalhe a mistura em uma forma e leve à geladeira por algumas horas para firmar. Corte em pedaços e sirva como sobremesa."
+            },
+            
+            // Adicione informações semelhantes para as outras receitas...
+        };
+
+        const receitaSelecionada = document.getElementById("receita-selecionada");
+        const selectReceitas = document.getElementById("receitas");
+
+        selectReceitas.addEventListener("change", function() {
+            const receita = this.value;
+            const dadosReceita = receitas[receita];
+            receitaSelecionada.innerHTML = `
+                <h3>${dadosReceita.titulo}</h3>
+                <h4>Ingredientes:</h4>
+                <p>${dadosReceita.ingredientes}</p>
+                <h4>Modo de Preparo:</h4>
+                <p>${dadosReceita.modoPreparo}</p>
+            `;
+        });
+    </script>
+</body>
+</html>
