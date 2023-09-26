@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="criamos esse site com o objetivo de melhorar a saúde das pessoas, com relação a hábitos alimentares, rotinas e etc.">
+    <meta name="keywords" content="alimentos, saúde, exercicíos">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Dieta Atinks</title>
+</head>
+    <style>
+        body {
+            color: #000000;;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            border-bottom: 5px solid #ff013f;
+            background-color: #0ac91a;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: Josefin Sans ;
+            margin: 20px 0;
+        }
+
+        #container-cetogenica {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px #ff013f;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        select {
+            padding: 5px;
+            font-size: 16px;
+        }
+
+        #receita-selecionada {
+            margin-top: 20px;
+        }
+
+
+    </style>
+</head>
+<body style="font-family: Josefin Sans;">
+    <nav class="navbar">
+        <div class="logo">
+           
+            <img style="width: 120px; "  src="img/nosso_logo-removebg-preview.png">
+        </div>
+        <div class="menu">
+            <a href="index.html">Página inicial</a>
+            <a href="Sobre_nós.html">Sobre nós</a>
+            <a href="Calculadora IMC.html">Calculadora IMC</a>
+            <a href="Dietas.html">Dietas</a>
+            <a href="Exercicíos.html">Exercicíos</a>
+        </div>
+   </nav>
+    <div class="headercetogenica">
+    <header>
+        <h1>Dieta Atinks</h1>
+    </header>
+</div>
+
+    <div id="container-cetogenica">
+        <h2>Prós e Contras da Dieta Atinks</h2>
+        <h3>Prós:</h3>
+
+        <ul>
+            <li>Perde de Peso Rápida.</li>
+            <li>Controle dos Níveis de Açúcar no Sangue.</li>
+            <li>Maior Saciedade.</li>
+            <li>Melhorias no Perfil Lipídico.</li>
+        </ul>
+
+        <h3>Contras:</h3>
+        <ul>
+            <li>Restrição de Grãos e Frutas.</li>
+            <li>Efeito Colateral Inicial</li>
+            <li>Restrição Alimentar.</li>
+            <li>Potencial Efeitos Colaterias(reanais ou hepáticos).</li>
+            <li>Efeitos Desconhecidos a Longo Prazo.</li>
+            <br>
+            <br>
+            <img style="width: 550px; padding-left: 165px;" src="img-dietas/atinks1.png">
+        </ul>
+   
+
+
+        <h2>Receitas Lowcarb</h2>
+        <p>Escolha uma receita no menu abaixo:</p>
+        <div class="selectcetogenica"></div>
+        <select id="receitas">
+            <option value="">Selecione uma receita</option>
+            <option value="receita1">Receita 1: Omelete com Espinafre e Queijo</option>
+            <option value="receita2">Receita 2: Frango Grelhado com Brócolis</option>
+            <option value="receita3">Receita 3: Salada de Atum</option>
+            <option value="receita4">Receita 4: Bife com Espargos</option>
+            <option value="receita5">Receita 5: Salmão Assado com Abobrinha</option>
+            <option value="receita6">Receita 6: Hambúrguer com Alface em vez de Pão</option>
+            <option value="receita7">Receita 7: Sopa de Brócolis e Queijo</option>
+            <option value="receita8">Receita 8: Beringela à Parmegiana</option>
+            <option value="receita9">Receita 9: Cheesecake de Morango</option>
+            <option value="receita10">Receita 10: Mousse de Chocolate</option>
+        </div>
+        </select>
+
+        <div id="receita-selecionada"></div>
+    </div>
+    <script>
+        const receitas = {
+            receita1: {
+                titulo: "Omelete com Espinhafre e Queijo",
+                ingredientes: "Ovos, espinafre, queijo, sal e pimenta.",
+                modoPreparo: "Bata os ovos, adicione o espinafre e queijo, tempere e cozinhe em uma frigideira."
+            },
+
+
+            receita2: {
+                titulo: "Frango Grelhado com Brócolis",
+                ingredientes: " Peito de frango, brócolis, azeite, temperos.",
+                modoPreparo: "Empere o frango, grelhe e sirva com brócolis cozido no vapor."
+            },
+
+
+            receita3: {
+                titulo: "Salada de Atum",
+                ingredientes: " Atum enlatado, alface, aipo, maionese, mostarda.",
+                modoPreparo: "Misture todos os ingredientes e tempere a gosto." 
+            
+            },
+
+
+            receita4: {
+                titulo: "Bife com Espargos",
+                ingredientes: " Bife, espargos, manteiga, temperos.",
+                modoPreparo: " Grelhe o bife e os espargos, temperando com manteiga e especiarias."
+            },
+
+
+            receita5: {
+                titulo: "Salmão Assado com Abobrinha",
+                ingredientes: "Filé de salmão, abobrinha, azeite, limão, alho.",
+                modoPreparo: " Asse o salmão com abobrinha, regue com azeite, limão e alho."
+            },
+
+
+            receita6: {
+                titulo: "Hambúrguer com Alface em Vez de Pão",
+                ingredientes: " Carne moída magra, alface, queijo, alho, temperos.",
+                modoPreparo: " Modele os hambúrgueres, grelhe e sirva envolto em folhas de alface."
+            },
+
+
+
+            receita7: {
+                titulo: "Sopa de Brócolis e Queijo ",
+                ingredientes: "Brócolis, queijo cheddar, creme de leite, caldo de galinha.",
+                modoPreparo: " Cozinhe o brócolis em caldo de galinha, adicione o queijo cheddar e o creme de leite, depois bata até ficar cremoso."
+            },
+
+            
+            receita8: {
+                titulo: "Berinjela à Parmegiana",
+                ingredientes: "Berinjela, molho de tomate, queijo, azeite, orégano.",
+                modoPreparo: " Fatie a berinjela, cubra com molho de tomate, queijo e orégano. Asse até dourar."
+            },
+
+
+            receita9: {
+                titulo: "Cheesecake de Morango",
+                ingredientes: "Cream cheese, adoçante, ovos, morangos, extrato de baunilha.",
+                modoPreparo: "Misture os ingredientes do cheesecake, asse e sirva com morangos frescos."
+            },
+
+            
+            receita10: {
+                titulo: "Mousse de Chocolate",
+                ingredientes: "Abacate, cacau em pó, adoçante, extrato de baunilha.",
+                modoPreparo: " Misture os ingredientes no liquidificador até obter uma textura suave e cremosa. Sirva gelado."
+
+
+
+
+
+            },
+            
+            // Adicione informações semelhantes para as outras receitas...
+        };
+
+        const receitaSelecionada = document.getElementById("receita-selecionada");
+        const selectReceitas = document.getElementById("receitas");
+
+        selectReceitas.addEventListener("change", function() {
+            const receita = this.value;
+            const dadosReceita = receitas[receita];
+            receitaSelecionada.innerHTML = `
+                <h3>${dadosReceita.titulo}</h3>
+                <h4>Ingredientes:</h4>
+                <p>${dadosReceita.ingredientes}</p>
+                <h4>Modo de Preparo:</h4>
+                <p>${dadosReceita.modoPreparo}</p>
+            `;
+        });
+    </script>
+</body>
+</html>

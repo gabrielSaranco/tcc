@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="criamos esse site com o objetivo de melhorar a saúde das pessoas, com relação a hábitos alimentares, rotinas e etc.">
+    <meta name="keywords" content="alimentos, saúde, exercicíos">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Dieta Vegetariana</title>
+</head>
+    <style>
+        body {
+            color: #000000;;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            border-bottom: 5px solid #ff013f;
+            background-color: #0ac91a;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: Josefin Sans ;
+            margin: 20px 0;
+        }
+
+        #container-cetogenica {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px #ff013f;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        select {
+            padding: 5px;
+            font-size: 16px;
+        }
+
+        #receita-selecionada {
+            margin-top: 20px;
+        }
+
+
+    </style>
+</head>
+<body style="font-family: Josefin Sans;">
+    <nav class="navbar">
+        <div class="logo">
+           
+            <img style="width: 120px; "  src="img/nosso_logo-removebg-preview.png">
+        </div>
+        <div class="menu">
+            <a href="index.html">Página inicial</a>
+            <a href="Sobre_nós.html">Sobre nós</a>
+            <a href="Calculadora IMC.html">Calculadora IMC</a>
+            <a href="Dietas.html">Dietas</a>
+            <a href="Exercicíos.html">Exercicíos</a>
+        </div>
+   </nav>
+    <div class="headercetogenica">
+    <header>
+        <h1>Dieta Vegetariana</h1>
+    </header>
+</div>
+
+    <div id="container-cetogenica">
+        <h2>Prós e Contras da Dieta Vegetariana</h2>
+        <h3>Prós:</h3>
+
+        <ul>
+            <li>Saúde Cardiovascular.</li>
+            <li>Controle de Peso.</li>
+            <li>Melhora da Saúde Digestiva.</li>
+            <li>Redução do Risco de Câncer.</li>
+            <li>Sustentabilidade Ambietal.</li>
+        </ul>
+
+        <h3>Contras:</h3>
+        <ul>
+            <li>Possível Deficiència De Nutrientes.</li>
+            <li>Complexidade Nutricional.</li>
+            <li>Restrição Alimentar e Social.</li>
+            <li>Exigência de Planejamento.</li>
+            <li>Preconceito Nutricional.</li>
+            <li>Necessidade de Suplementação.</li>
+            <br>
+            <br>
+            <img style="width: 550px; padding-left: 165px;" src="img-dietas/vegetariana.png">
+        </ul>
+   
+
+
+        <h2>Receitas Lowcarb</h2>
+        <p>Escolha uma receita no menu abaixo:</p>
+        <div class="selectcetogenica"></div>
+        <select id="receitas">
+            <option value="">Selecione uma receita</option>
+            <option value="receita1">Receita 1: Salada de Quinoa com Abacate</option>
+            <option value="receita2">Receita 2: Espaguete de Abobrinha com Pesto</option>
+            <option value="receita3">Receita 3: Curry de Legumes</option>
+            <option value="receita4">Receita 4: Tofu Grelhado com Vegetais</option>
+            <option value="receita5">Receita 5: Feijão Mexicano com Guacamole</option>
+            <option value="receita6">Receita 6: Risote de Cogumelos</option>
+            <option value="receita7">Receita 7: Falafel com Homus</option>
+            <option value="receita8">Receita 8: Chilli Vegetariano</option>
+            <option value="receita9">Receita 9: Sorvete de Banana</option>
+            <option value="receita10">Receita 10: Torta de Maçã Vegana</option>
+        </div>
+        </select>
+
+        <div id="receita-selecionada"></div>
+    </div>
+    <script>
+        const receitas = {
+            receita1: {
+                titulo: "Salada de Quinoa com Abacate",
+                ingredientes: "Quinoa, abacate, pepino, tomate, coentro, suco de limão, azeite.",
+                modoPreparo: "Cozinhe a quinoa de acordo com as instruções da embalagem. Misture a quinoa cozida com o abacate, pepino, tomate e coentro picados. Tempere com suco de limão e azeite a gosto. "
+            },
+
+
+            receita2: {
+                titulo: "Espaguete de Abobrinha com Pesto",
+                ingredientes: " Abobrinhas, manjericão, nozes, azeite, alho, queijo parmesão.",
+                modoPreparo: "Faça um pesto batendo manjericão, nozes, alho e queijo parmesão no liquidificador. Espiralize as abobrinhas e misture com o pesto."
+            },
+
+
+            receita3: {
+                titulo: "Curry de Legumes",
+                ingredientes: " Batata, cenoura, brócolis, abobrinha, leite de coco, curry em pó.",
+                modoPreparo: "Cozinhe os legumes em leite de coco com curry em pó até que fiquem macios. Sirva com arroz integral." 
+            
+            },
+
+
+            receita4: {
+                titulo: "Tofú Grelhado com Vegetais",
+                ingredientes: " Tofu, pimentões, cebola, abobrinha, molho de soja.",
+                modoPreparo: "Marine o tofu em molho de soja, grelhe com os vegetais até dourar e sirva com arroz ou quinoa."
+            },
+
+
+            receita5: {
+                titulo: "Feijão Mexicano com Guacamole",
+                ingredientes: "Feijão-preto, milho, tomate, cebola, abacate, coentro.",
+                modoPreparo: " Misture feijão e milho com tomate, cebola e coentro para fazer uma salada. Prepare guacamole para servir por cima."
+            },
+
+
+            receita6: {
+                titulo: "Risoto de Cogumelos ",
+                ingredientes: " Arroz arbóreo, cogumelos, cebola, vinho branco, caldo de legumes, queijo parmesão.",
+                modoPreparo: " Cozinhe o arroz com cogumelos e cebola, adicionando vinho branco e caldo de legumes aos poucos, até que o arroz esteja cremoso. Adicione queijo parmesão no final."
+            },
+
+
+
+            receita7: {
+                titulo: "Falafel com Homus ",
+                ingredientes: "Grão-de-bico, alho, cominho, coentro, tahine.",
+                modoPreparo: " Triture grão-de-bico com alho, cominho e coentro. Modele em bolinhas e frite ou asse. Sirva com homus."
+            },
+
+            
+            receita8: {
+                titulo: "Chili Vegetariano",
+                ingredientes: "Feijão, lentilhas, pimentão, cebola, tomate, cominho, chili em pó.",
+                modoPreparo: "Cozinhe feijão, lentilhas, pimentão, cebola e tomate com especiarias para fazer um chili saboroso."
+            },
+
+
+            receita9: {
+                titulo: "Sorvete de Banana",
+                ingredientes: "Bananas maduras congeladas.",
+                modoPreparo: "Congele bananas maduras e bata no liquidificador até obter um sorvete cremoso. Sirva imediatamente."
+            },
+
+            
+            receita10: {
+                titulo: " Torta de Maçã Vegana",
+                ingredientes: "Maçãs, massa de torta vegana, canela, açúcar de coco.",
+                modoPreparo: " Prepare uma massa de torta vegana. Descasque, corte e cozinhe as maçãs com canela e açúcar de coco. Coloque as maçãs na massa de torta e asse até dourar."
+
+
+
+
+
+            },
+            
+            // Adicione informações semelhantes para as outras receitas...
+        };
+
+        const receitaSelecionada = document.getElementById("receita-selecionada");
+        const selectReceitas = document.getElementById("receitas");
+
+        selectReceitas.addEventListener("change", function() {
+            const receita = this.value;
+            const dadosReceita = receitas[receita];
+            receitaSelecionada.innerHTML = `
+                <h3>${dadosReceita.titulo}</h3>
+                <h4>Ingredientes:</h4>
+                <p>${dadosReceita.ingredientes}</p>
+                <h4>Modo de Preparo:</h4>
+                <p>${dadosReceita.modoPreparo}</p>
+            `;
+        });
+    </script>
+</body>
+</html>
