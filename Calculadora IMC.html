@@ -15,6 +15,38 @@ body {
     background-position: center center;
   }
 
+  /* Estilos para a barra de navegação */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:rgb(45, 210, 30); /* Adicione a cor de fundo desejada */
+    z-index: 1000; /* Garante que a barra de navegação apareça sobre outros elementos */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adicione uma sombra, se desejado */
+}
+
+/* Estilos para os links da barra de navegação */
+.navbar a {
+    color: #ffffff; /* Adicione a cor do texto desejada */
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px; /* Espaçamento entre os links, se desejar */
+    font-family: Josefin Sans;
+}
+
+/* Estilos para o logo */
+.navbar .logo img {
+    width: 120px;
+    height: 120px;
+}
+
+/* Para garantir que o conteúdo não fique escondido sob a barra de navegação */
+body {
+    padding-top: 70px; /* Ajuste o valor conforme necessário para evitar sobreposição com a barra de navegação */
+}
+
+
       .botao {
         border-radius: 10%;
         background-color: #4CAF50;
@@ -34,20 +66,21 @@ body {
     </style>
 </head>
 <div class="img_calc">
-<body background="img/mesa de comida.jpg">
-</div>
 <body>
-    <nav style="position:initial;" class="navbar">
+</div>
+<body style="font-family: Josefin Sans;">
+  <nav class="navbar">
       <div class="logo">
-        <h1 style="font-family: Josefin Sans;">Calculadora de IMC</h1>
-    </div>
+         
+          <img style="width: 120px; "  src="img/nosso_logo-removebg-preview.png">
+      </div>
       <div class="menu">
-        <a href="index.html">Página Inicial</a>
-        <a href="Dietas.html">Dietas</a>
-        <a href="Sobre_nós.html">Sobre Sobre nós</a>
-        <a href="Exercicíos.html">Exercicíos</a>
-    </div>
-</nav>
+          <a href="index.html">Página inicial</a>
+          <a href="Sobre_nós.html">Sobre nós</a>
+          <a href="Dietas.html">Dietas</a>
+          <a href="Exercicíos.html">Exercicíos</a>
+      </div>
+ </nav>
       <br>
       <br>
       <br>
@@ -59,13 +92,13 @@ body {
         <style>
           body {
             background-color: #f2f2f2;
-            font-family: Arial, sans-serif;
+            font-family: josefin sans-serif ;
           }
       
           .container {
             max-width: 400px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 30px;
             background-color: #ffffff;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -123,6 +156,11 @@ body {
             margin-top: 10px;
           }
         </style>
+
+
+        <div class="calculadora">
+
+      
         <div class="container">
           <h1>Calculadora de IMC</h1>
           <form id="imcForm">
@@ -203,19 +241,8 @@ body {
             return bmi;
           }
         </script>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <a style="font-family: Josefin Sans;"  href="index.html" class="botao">Página inicial</a>
+        </div>
+
       </body>
 </body>
 </html>
