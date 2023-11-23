@@ -314,4 +314,6 @@ transform: translateY(-30px); /* Move o card 3-0 pixels para cima */
    
 }
 
-
+.imagens {
+    margin: 10px;
+  }
